@@ -5,4 +5,8 @@ Rank Text Pairs Q/A Documentary/Query in Natural Language Processing: Semantic a
 
 Aliaksei Severyn and Alessandro Moschitti, 2015, Learning to Rank Short Text Pairs with Convolutional Deep Neural Networks
 http://eecs.csuohio.edu/~sschung/CIS660/RankShortTextCNNACM2015.pdf
+  
+  
+![](images/Fig2_deep_learning_architecture_for_reranking_short_text_pairs.png)
+
 
