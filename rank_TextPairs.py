@@ -92,10 +92,14 @@ def rank_TextPairs_CNN(Doc, Que):
 if __name__ == '__main__':
     word_to_index, index_to_word, word_to_vec_map = read_glove_vecs('glove.6B.50d.txt')
     from sklearn.datasets import fetch_20newsgroups
-    newsgroups_train = fetch_20newsgroups(subset='train')
-    newsgroups_train = dict()
-    Doc = newsgroups_train['data']
-    Que = newsgroups_train['target']
+    newsgroups_train = fetch_20newsgroups(subset='train',remove=('headers', 'footers', 'quotes')
+    data = newsgroups_train['data']
+    targets = [ newsgroups_train['target_names'][i] for i in newsgroups_train['target'] ]
+    # TODO: expand_contractions
+    # TODO: builld negative samples of input [Doc,Que] & y_train value
+    
+    Doc = data
+    Que = target
  
 
     # Build Model Graph
